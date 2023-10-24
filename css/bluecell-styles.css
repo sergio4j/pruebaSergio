@@ -1,0 +1,77 @@
+/* Estilo base para el formulario */
+#bluecell_form {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    margin: 40px auto;
+    font-family: Arial, sans-serif;
+}
+
+#bluecell_form div {
+    margin-bottom: 20px;
+}
+
+/* Estilos para las etiquetas (labels) */
+#bluecell_form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Estilo para los campos de texto e input */
+#bluecell_form input[type="text"],
+#bluecell_form input[type="email"],
+#bluecell_form input[type="tel"],
+#bluecell_form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: border-color 0.2s;
+}
+
+#bluecell_form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#bluecell_form input[type="text"]:focus,
+#bluecell_form input[type="email"]:focus,
+#bluecell_form input[type="tel"]:focus,
+#bluecell_form textarea:focus {
+    border-color: #80b0e2;  /* Color al hacer foco en el campo */
+}
+
+#bluecell_form div {
+    position: relative;
+}
+
+#bluecell_form input[type="checkbox"] {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 8px; /* Espacio entre el checkbox y la etiqueta */
+}
+
+#bluecell_form label[for="aceptacion"] {
+    padding-left: 30px; /* Espacio suficiente para que el texto no se superponga con el checkbox */
+}
+
+/* Estilo para el botón de enviar */
+#bluecell_form input[type="submit"] {
+    background-color: #007BFF;  /* Color del fondo */
+    color: #ffffff;             /* Color del texto */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+#bluecell_form input[type="submit"]:hover {
+    background-color: #0056b3;  /* Color al pasar el mouse por encima */
+}
